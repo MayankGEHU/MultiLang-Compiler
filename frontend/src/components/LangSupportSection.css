@@ -1,22 +1,56 @@
 .LangSupportSection-main {
-    padding: 40px;
+    padding: 40px 20px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 40px 20px;
-    overflow-x: hidden; 
+    overflow-x: hidden;
   }
   
-  .lang-grid {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 20px;
-    max-width: 1155px;
+  .lang-scroll-section {
+    width: 80%;
+    overflow: hidden;
+    margin-bottom: 60px;
+  }
+  
+  .lang-marquee {
+    position: relative;
     width: 100%;
+    overflow: hidden;
+    padding: 10px 0;
+  }
+  
+  .lang-marquee-track {
+    display: flex;
+    gap: 20px;
+    width: fit-content;
+    animation: scroll-left 25s linear infinite;
+  }
+  
+  .lang-marquee.right .lang-marquee-track {
+    animation: scroll-right 25s linear infinite;
+  }
+  
+  @keyframes scroll-left {
+    0% {
+      transform: translateX(0%);
+    }
+    100% {
+      transform: translateX(-50%);
+    }
+  }
+  
+  @keyframes scroll-right {
+    0% {
+      transform: translateX(-50%);
+    }
+    100% {
+      transform: translateX(0%);
+    }
   }
   
   .lang-box {
+    flex: 0 0 auto;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -28,42 +62,19 @@
     background-color: #fff;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.03);
     transition: all 0.3s ease-in-out;
-  }
-  
-  .lang-box:hover {
-    background-color: #f4f4f4;
-    transform: translateY(-3px);
+    min-width: 180px;
   }
   
   .lang-icon {
     font-size: 28px;
   }
   
-  @media (max-width: 1024px) {
-    .lang-grid {
-      grid-template-columns: repeat(3, 1fr);
-    }
+  .lang-img {
+    width: 35px;
+    height: 35px;
+    object-fit: contain;
   }
   
-  @media (max-width: 768px) {
-    .lang-grid {
-      grid-template-columns: repeat(2, 1fr);
-    }
-  }
-  
-  @media (max-width: 480px) {
-    .lang-grid {
-      grid-template-columns: 1fr;
-    }
-  
-    .lang-box {
-      flex-direction: column;
-      text-align: center;
-      gap: 10px;
-    }
-  }
-
-
   .feature-extension {
     padding: 4rem 2rem;
     text-align: center;
@@ -74,11 +85,6 @@
     font-weight: 700;
     margin-bottom: 0.75rem;
     color: #504f4f;
-  }
-  .lang-img {
-    width: 35px;
-    height: 35px;
-    object-fit: contain;
   }
   
   .feature-heading p {
@@ -101,7 +107,7 @@
     padding: 2rem;
     border: 1px solid #eee;
     border-radius: 1rem;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
     max-width: 300px;
     flex: 1;
     transition: transform 0.3s ease;

@@ -13,11 +13,12 @@ const PromoSection = () => {
           and conquer the web.
         </h1>
         <p className="promo-subtext">
-        Create a new project or connect an existing one to explore features like real-time code execution, syntax validation, debugging, collaboration, and more.
+        The MultiLang Compiler is open for contribution! <br/>
+Jump in to help build a powerful web-based compiler with real-time code execution, syntax validation, sandboxing, and multi-language support.<br/>
+Whether you're into frontend, backend, or design — your contributions are welcome.
         </p>
         <div className="promo-buttons">
-          <button className="promo-btn">Read the docs</button>
-          <button className="promo-btn">Developer Hub</button>
+          <button className="promo-btn">Open For Contributions.</button>
         </div>
       </div>
 

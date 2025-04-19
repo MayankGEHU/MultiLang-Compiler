@@ -48,43 +48,6 @@
 }
 
 
-.LangSupportSection-main {
-  padding: 40px 20px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.lang-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-  gap: 20px;
-  max-width: 1200px;
-  width: 100%;
-}
-
-.lang-box {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  border: 1px solid #eee;
-  border-radius: 16px;
-  padding: 20px;
-  font-size: 1.2rem;
-  font-weight: 500;
-  background-color: #fff;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.03);
-  transition: all 0.3s ease-in-out;
-}
-
-.lang-box:hover {
-  background-color: #f4f4f4;
-  transform: translateY(-3px);
-}
-
-.lang-icon {
-  font-size: 28px;
-}
 
 @media (max-width: 768px) {
   .hero-container h1 {
@@ -118,18 +81,5 @@
   .get-started {
     padding: 12px 20px;
     font-size: 14px;
-  }
-
-  .lang-grid {
-    grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
-    gap: 12px;
-  }
-
-  .lang-icon {
-    font-size: 24px;
-  }
-
-  .lang-box {
-    padding: 14px;
   }
 }
