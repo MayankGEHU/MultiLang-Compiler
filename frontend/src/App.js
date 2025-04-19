@@ -1,41 +1,29 @@
-import "./App.css";
-import axios from "axios";
-import React, { useState } from "react";
+import React from "react";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Navbar from "./components/Navbar";
+import HeroSection from "./components/HeroSection";
+import LangSupportSection from "./components/LangSupportSection";
+import PromoSection from "./components/PromoSection";
+import Compiler from "./components/Compiler";
 
 function App() {
-  const [code, setCode] = useState("");
-  const [output, setOutput] = useState("");
-
-  const handeSubmit = async () => {
-    const payLoad = {
-      language: "cpp",
-      code,
-    };
-
-    try{
-    const {data} = await axios.post("http://localhost:5000/run", payLoad);
-    setOutput(data.output);
-    } catch(err) {
-      console.log(err.response);
-    }
-  };
-
   return (
-    <div className="App">
-      <h1>Online Code Compiler</h1>
-      <textarea
-        rows="20"
-        cols="75"
-        value={code}
-        onChange={(e) => {
-          setCode(e.target.value);
-        }}
-      ></textarea>
-      <br />
-      <button onClick={handeSubmit}>Submit</button>
-
-      <p> {output} </p>
-    </div>
+    <Router>
+      <Navbar />
+      <Routes>
+        <Route
+          path="/"
+          element={
+            <>
+              <HeroSection />
+              <LangSupportSection />
+              <PromoSection />
+            </>
+          }
+        />
+        <Route path="/compiler" element={<Compiler />} />
+      </Routes>
+    </Router>
   );
 }
 

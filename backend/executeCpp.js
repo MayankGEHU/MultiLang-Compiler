@@ -13,7 +13,10 @@ const executeCpp = (filepath) => {
 
   const outPath = path.join(outputPath, `${jobId}.exe`);
 
+  //Compiles the file 
   return new Promise((resolve, reject) => {
+
+    //only run the program if it compiles successfully.
     const command = `g++ "${filepath}" -o "${outPath}" && "${outPath}"`;
 
     exec(command, (error, stdout, stderr) => {
