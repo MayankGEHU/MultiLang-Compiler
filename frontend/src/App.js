@@ -5,6 +5,8 @@ import HeroSection from "./components/HeroSection";
 import LangSupportSection from "./components/LangSupportSection";
 import PromoSection from "./components/PromoSection";
 import Compiler from "./components/Compiler";
+import Footer  from "./components/Footer";
+import Features from "./components/Features";
 
 function App() {
   return (
@@ -18,11 +20,13 @@ function App() {
               <HeroSection />
               <LangSupportSection />
               <PromoSection />
+              <Features />
             </>
           }
         />
         <Route path="/compiler" element={<Compiler />} />
       </Routes>
+      <Footer/>
     </Router>
   );
 }

@@ -16,6 +16,7 @@
 .hero-container .highlight {
   color: #ff006e;
 }
+
 .hero-container p {
   margin-top: 20px;
   font-size: 25px;
@@ -46,8 +47,6 @@
   background-color: #ff2d88;
   color: white;
 }
-
-
 
 @media (max-width: 768px) {
   .hero-container h1 {

@@ -18,9 +18,10 @@
   -webkit-backdrop-filter: blur(12px); 
 }
 .navbar-wrapper.scrolled {
-  border: 1px solid black;
+  border: 2px solid #3b82f6;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
 }
+
 .navbar {
   display: flex;
   justify-content: space-between;
@@ -28,6 +29,9 @@
   gap: 24px;
 }
 
+.navbar-logo{
+  color: #ff006e;
+}
 
 .logo-img {
   height: 40px;
@@ -76,12 +80,11 @@
   cursor: pointer;
 }
 
-
 .request-btn {
   display: flex;
   align-items: center;
   gap: 6px;
-  background-color: #3b82f6;
+  background-color: #ff006e;
   color: white;
   border: none;
   padding: 10px 16px;

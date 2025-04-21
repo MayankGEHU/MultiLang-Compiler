@@ -21,7 +21,7 @@ const Navbar = () => {
         <nav className="navbar">
           <div className="navbar-logo">
             {/* <img src="/your-logo.png" alt="Logo" className="logo-img" /> */}
-            Multi Lang Compiler
+           <h3> Multi Lang Compiler</h3>
           </div>
 
           <ul className="navbar-links">
