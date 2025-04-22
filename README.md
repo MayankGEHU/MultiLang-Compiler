@@ -1,7 +1,8 @@
 ## 🧠 Multi Language Code Compiler
 
 A simple and intuitive web-based **online compiler** that allows users to write, run, and view the output of **C++ code** directly in their browser.
-![screenshot](https://github.com/MayankGEHU/MultiLangCompiler/raw/master/frontend/src/assets/screenshot.png)
+![screenshot](https://raw.githubusercontent.com/MayankGEHU/MultiLang-Compiler/master/frontend/src/assets/screenshot.png)
+
 
 ---
 
