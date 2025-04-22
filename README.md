@@ -13,14 +13,15 @@ To clone and run this application, you'll need [Git](https://git-scm.com) and [N
 
 ```bash
 # Clone this repository
-$ git clone https://github.com/GregSithole/gregsithole-react-portfolio
+$ git clone https://github.com/MayankGEHU/MultiLang-Compiler.git
 
 # Go into the repository
-$ cd gregsithole-react-portfolio
+$ cd frontend
+$ cd backend
 
 # Install dependencies
-$ yarn install
+$ npm install
 
 # Run the app
-$ yarn start
+$ npm start
 ```
