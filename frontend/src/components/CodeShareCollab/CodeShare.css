@@ -1,0 +1,9 @@
+.Codeshare-main-container{
+    height: 80vh;
+}
+
+.Codeshare-main-container-glob-container{
+    height: 90vh;
+    background-color: aquamarine;
+    margin-top: 170px;
+}

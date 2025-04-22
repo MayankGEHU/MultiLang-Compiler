@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import './Navbar.css';
-import { IoMoon } from 'react-icons/io5';
+// import { IoMoon } from 'react-icons/io5';
 import { IoIosArrowForward } from 'react-icons/io';
 
 const Navbar = () => {
@@ -36,9 +36,9 @@ const Navbar = () => {
           </ul>
 
           <div className="navbar-right">
-            <button className="theme-toggle">
+            {/* <button className="theme-toggle">
               <IoMoon size={20} />
-            </button>
+            </button> */}
             <button className="request-btn">
               SingUp <IoIosArrowForward />
             </button>

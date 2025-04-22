@@ -7,7 +7,7 @@ import PromoSection from "./components/PromoSection";
 import Compiler from "./components/Compiler";
 import Footer  from "./components/Footer";
 import Features from "./components/Features";
-
+import CodeShare from "./components/CodeShareCollab/CodeShare";
 function App() {
   return (
     <Router>
@@ -25,6 +25,7 @@ function App() {
           }
         />
         <Route path="/compiler" element={<Compiler />} />
+        <Route path="/codeshare" element={<CodeShare />} />
       </Routes>
       <Footer/>
     </Router>
