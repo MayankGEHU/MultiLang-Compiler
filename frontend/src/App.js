@@ -8,6 +8,8 @@ import Compiler from "./components/Compiler";
 import Footer  from "./components/Footer";
 import Features from "./components/Features";
 import CodeShare from "./components/CodeShareCollab/CodeShare";
+// import SignUp from "./components/authPage/SignUp";
+
 function App() {
   return (
     <Router>
@@ -26,6 +28,7 @@ function App() {
         />
         <Route path="/compiler" element={<Compiler />} />
         <Route path="/codeshare" element={<CodeShare />} />
+        {/* <Route path="/signup" element={<SignUp />} /> */}
       </Routes>
       <Footer/>
     </Router>

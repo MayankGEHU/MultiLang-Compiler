@@ -2,9 +2,16 @@ import React, { useEffect, useState } from 'react';
 import './Navbar.css';
 // import { IoMoon } from 'react-icons/io5';
 import { IoIosArrowForward } from 'react-icons/io';
+import { useNavigate } from 'react-router-dom';
 
 const Navbar = () => {
   const [scrolled, setScrolled] = useState(false);
+  const navigate = useNavigate();
+
+  const handleSignUp = () => {
+    navigate("/signup");
+  };
+
 
   useEffect(() => {
     const handleScroll = () => {
@@ -39,7 +46,7 @@ const Navbar = () => {
             {/* <button className="theme-toggle">
               <IoMoon size={20} />
             </button> */}
-            <button className="request-btn">
+            <button className="request-btn" onClick={handleSignUp}>
               SingUp <IoIosArrowForward />
             </button>
           </div>
