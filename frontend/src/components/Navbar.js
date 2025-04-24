@@ -2,15 +2,15 @@ import React, { useEffect, useState } from 'react';
 import './Navbar.css';
 // import { IoMoon } from 'react-icons/io5';
 import { IoIosArrowForward } from 'react-icons/io';
-import { useNavigate } from 'react-router-dom';
+// import { useNavigate } from 'react-router-dom';
 
 const Navbar = () => {
   const [scrolled, setScrolled] = useState(false);
-  const navigate = useNavigate();
+  // const navigate = useNavigate();
 
-  const handleSignUp = () => {
-    navigate("/signup");
-  };
+  // const handleSignUp = () => {
+  //   navigate("/signup");
+  // };
 
 
   useEffect(() => {
@@ -46,7 +46,7 @@ const Navbar = () => {
             {/* <button className="theme-toggle">
               <IoMoon size={20} />
             </button> */}
-            <button className="request-btn" onClick={handleSignUp}>
+            <button className="request-btn">
               SingUp <IoIosArrowForward />
             </button>
           </div>

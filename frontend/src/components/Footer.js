@@ -8,8 +8,8 @@ function Footer() {
         <div className="footer-left-section">
           <h2 className="footer-logo">Multi Lang Compiler</h2>
           <p className="footer-description">
-            Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.
-            Velit officia consequat duis enim velit mollit.
+           Hello my name is mayank singh and i'm building online
+           Compiler for c++, python, java etc.
           </p>
         </div>
 
