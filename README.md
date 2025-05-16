@@ -6,6 +6,12 @@ A simple and intuitive web-based **online compiler** that allows users to write,
 
 ![screenshot](https://raw.githubusercontent.com/MayankGEHU/MultiLang-Compiler/master/frontend/src/assets/screenshot.png)
 
+<br/>
+![screenshot](https://raw.githubusercontent.com/MayankGEHU/MultiLang-Compiler/master/frontend/src/assets/screenshot01.png)
+
+<br/>
+![screenshot](https://raw.githubusercontent.com/MayankGEHU/MultiLang-Compiler/master/frontend/src/assets/screenshot02.png)
+
 ---
 ## How To Use
 
