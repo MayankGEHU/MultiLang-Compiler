@@ -18,7 +18,7 @@ function HeroSection() {
 
       <div className="hero-buttons">
         <button className="get-started" onClick={handleGetStarted}>
-          Get started
+          Get Started
         </button>
       </div>
     </div>

@@ -30,7 +30,6 @@
   flex-wrap: wrap;
   gap: 16px;
 }
-
 .get-started {
   background-color: #ff006e;
   border: none;
@@ -41,11 +40,29 @@
   border-radius: 30px;
   cursor: pointer;
   transition: 0.3s;
+  position: relative;
+  z-index: 1;
 }
 
-.get-started:hover {
-  background-color: #ff2d88;
-  color: white;
+.get-started::before {
+  content: "";
+  position: absolute;
+  top: -6px;
+  left: -6px;
+  right: -6px;
+  bottom: -6px;
+  border: 2px solid #3b82f6;
+  border-radius: 50px;
+  opacity: 0;
+  z-index: -1;
+  transition: opacity 0.3s ease;
+}
+
+.get-started:hover::before {
+  opacity: 1;
+}
+.get-started:hover{
+    color: white;
 }
 
 @media (max-width: 768px) {

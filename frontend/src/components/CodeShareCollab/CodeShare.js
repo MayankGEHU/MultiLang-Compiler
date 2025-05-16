@@ -77,7 +77,7 @@ function CodeShare() {
         />
         <div className="main-container-button-control">
           <div className="button-container-codeshare">
-            <button onClick={handleCreateRoom}>Create Room</button>
+            <button button className="get-started" onClick={handleCreateRoom}>Create Room</button>
             <div>
               <h4>Share this Room ID with your friend:</h4>
               <p>{roomId}</p>
@@ -92,7 +92,7 @@ function CodeShare() {
               value={userRoomId}
               onChange={(e) => setUserRoomId(e.target.value)}
             />
-            <button onClick={handleJoinRoom}>Join Room</button>
+            <button button className="get-started" onClick={handleJoinRoom}>Join Room</button>
           </div>
         </div>
       </div>
