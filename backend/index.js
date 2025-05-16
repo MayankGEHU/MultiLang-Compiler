@@ -26,6 +26,7 @@ Sets a default value of "cpp" for language if it is not provided in the request*
 
 app.post("/run", async (req, res) => {
   const { language = "cpp", code } = req.body;
+  console.log(language);
 
   if (code == undefined) {
     return res.status(400).json({ success: false, error: "Empty code body!" });

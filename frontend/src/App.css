@@ -36,7 +36,7 @@
 .compiler-body {
   display: flex;
   flex-direction: row;
-  width: 96%;
+  width: 91%;
   padding: 16px;
   gap: 24px;
 }

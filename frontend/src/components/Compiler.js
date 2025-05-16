@@ -2,15 +2,18 @@ import React, { useState } from "react";
 import axios from "axios";
 import Editor from "@monaco-editor/react";
 import "../App.css";
-import Dropdown from 'react-bootstrap/Dropdown';
 
 const Compiler = () => {
-  const [code, setCode] = useState(`#include <iostream>\nusing namespace std;\n\nint main() {\n    cout << "Hello, World!";\n    return 0;\n}`);
+  const [code, setCode] = useState(
+    `#include <bits/stdc++.h>\nusing namespace std;\n\nint main() {\n    cout << "Hello, World!";\n    return 0;\n}`
+  );
+
+  const[language, setLanguage] = useState("cpp");
   const [output, setOutput] = useState("");
 
   const handleSubmit = async () => {
     const payLoad = {
-      language: "cpp",
+      language :"cpp",
       code,
     };
 
@@ -29,22 +32,24 @@ const Compiler = () => {
         <span className="tab active">Main.cpp</span>
         <span className="title">C++ Hello World</span>
         <div className="controls">
-        <div className="language-changer">
-        <Dropdown>
-      <Dropdown.Toggle variant="success" id="dropdown-basic">
-        Dropdown Button
-      </Dropdown.Toggle>
+          <div className="language-changer">
+            <select
+            value={language}
+            onChange={
+              (e)=> {
+                setLanguage(e.target.value);
+                console.log(e.target.value);
+              }
+            }
+            >
+              <option value="cpp">Cpp</option>
+              <option value="py">Python</option>
+            </select>
+          </div>
 
-      <Dropdown.Menu>
-        <Dropdown.Item href="#/action-1">Action</Dropdown.Item>
-        <Dropdown.Item href="#/action-2">Another action</Dropdown.Item>
-        <Dropdown.Item href="#/action-3">Something else</Dropdown.Item>
-      </Dropdown.Menu>
-    </Dropdown>
-</div>
-
-
-          <button className="run-button" onClick={handleSubmit}>RUN ▶</button>
+          <button className="run-button" onClick={handleSubmit}>
+            RUN ▶
+          </button>
         </div>
       </div>
 
@@ -54,7 +59,7 @@ const Compiler = () => {
             height="500px"
             defaultLanguage="cpp"
             value={code}
-            theme="light"
+            theme="vs-dark"
             onChange={(value) => setCode(value)}
           />
         </div>

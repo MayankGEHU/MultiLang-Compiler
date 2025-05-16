@@ -5,10 +5,9 @@ import HeroSection from "./components/HeroSection";
 import LangSupportSection from "./components/LangSupportSection";
 import PromoSection from "./components/PromoSection";
 import Compiler from "./components/Compiler";
+import CodeShare from "./components/CodeShareCollab/CodeShare";
 import Footer  from "./components/Footer";
 import Features from "./components/Features";
-import CodeShare from "./components/CodeShareCollab/CodeShare";
-// import SignUp from "./components/authPage/SignUp";
 
 function App() {
   return (
@@ -28,7 +27,6 @@ function App() {
         />
         <Route path="/compiler" element={<Compiler />} />
         <Route path="/codeshare" element={<CodeShare />} />
-        {/* <Route path="/signup" element={<SignUp />} /> */}
       </Routes>
       <Footer/>
     </Router>
