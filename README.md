@@ -7,7 +7,7 @@ A simple and intuitive web-based **online compiler** that allows users to write,
 ![screenshot](https://raw.githubusercontent.com/MayankGEHU/MultiLang-Compiler/master/frontend/src/assets/screenshot.png)
 
 <br/>
-![screenshot](https://raw.githubusercontent.com/MayankGEHU/MultiLang-Compiler/master/frontend/src/assets/Screenshot02.png)
+![screenshot](https://raw.githubusercontent.com/MayankGEHU/MultiLang-Compiler/master/frontend/src/assets/Screenshot01.png)
 
 <br/>
 ![screenshot](https://raw.githubusercontent.com/MayankGEHU/MultiLang-Compiler/master/frontend/src/assets/Screenshot02.png)
